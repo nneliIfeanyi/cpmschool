@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>School System</title>
+	<link rel="stylesheet" type="text/css" href="theme.css">
+	<link rel="stylesheet" type="text/css" href="w3.css">
+
+</head>
+<body class="w3-serif">
+	<?php 
+		include 'header.php';
+
+	?>
+
+	<!-- Facilities Section -->
+
+	<section>
+		<div class="w3-card-4 w3-margin">
+			<div class="w3-serif w3-padding-large">
+				<h2><b>Our Facilities</b></h2>
+				<p>In an attempt to provide best quality learning experience to our pupils and students, we have made available the following facilities.., which  for sure is subjct to improvement.</p>
+			</div>
+			<div class="w3-row-padding">
+				<div class="w3-half">	
+					<h5 class="w3-blue w3-tag w3-large w3-padding"><b>Below is a List Of Our Facilities.</b></h5>
+					<ul class="w3-ul">
+						<li>&spades; &nbsp;A spacious land mass with beautiful structures.</li>
+						<li>&spades; &nbsp;Spacious and well ventilated classrooms.</li>
+						<li>&spades; &nbsp;Standard labouratory for science students.</li>
+						<li>&spades; &nbsp;ICt Unit stuffed with modern computers & internet facility.</li>
+						<li>&spades; &nbsp;Examination Hall</li>
+						<li>&spades; &nbsp;Large condusive staffrooms.</li>
+						<li>&spades; &nbsp;Playing Grounds for sports.</li>
+						<li>&spades; &nbsp;School Buses for easy conveying of Pupils/students.</li>
+						<li>&spades; &nbsp;Rest rooms for convinience.</li>
+						<li>&spades; &nbsp;Chapel for worship</li>
+						<li>&spades; &nbsp;And more..</li>
+					</ul>
+			</div>
+		</div>
+
+	<div class="w3-padding-32">
+		<div class="w3-padding-large  w3-border-blue w3-bottombar w3-card-4 w3-margin">
+					<h2 class="w3-large w3-tag"><b>Enroll Now</b></h2>
+					<p class="w3-medium">Admission still ongoing for the 2022/2023 session.<br>@Glory Land Academy we welcome any new student/pupil interested in quality mental social and spiritual development<br><span class=""><b>For inquiries see details below.</b></span></p>
+					
+					
+			</div>
+	</div>
+
+	
+	
+
+
+	<?php 
+		include 'footer.php';
+
+	?>
+	<!--TheAnimationScript-->
+<script type="text/javascript">
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 6000); // Change image every 2 secondscard-4
+	}
+</script>
+
+<!--Animation section ends -->
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>School System</title>
+	<link rel="stylesheet" type="text/css" href="theme.css">
+	<link rel="stylesheet" type="text/css" href="w3.css">
+
+</head>
+<body class="w3-serif">
+	<?php 
+		include 'header.php';
+
+	?>
+
+	<!-- About Section -->
+	<section>
+		<div class="w3-card-4 w3-margin">
+			<div class="w3-serif w3-padding-large w3-padding-32">
+				<h2><b>A Brief History</b></h2>
+				<p>Our curriculumn and syllables is targeted at meeting the requirements as specified by the Ministry of Education which better equips the school in preparing her pupil/student for W.A.E.C. N.E.C.O. J.A.M.B and other National and state examination</p>
+			</div>
+			<div class="w3-row-padding">
+				<div class="w3-half w3-padding-16">	
+					<ul class="w3-ul">
+						<li class="w3-blue w3-hover-black"><b>Our Mission</b></li>
+						<li>English Language</li>
+						<li>Mathematics</li>
+						<li>Christian Religious Studies</li>
+						<li>Social Studies</li>
+						<li>Basic Science</li>
+						<li>Computer Science</li>
+						<li>Verbal Reasoning</li>
+						<li>Quantitative Reasoning</li>
+					</ul>
+			</div>
+			<div class="w3-half w3-padding-16">	
+					<ul class="w3-ul">
+						<li class="w3-black w3-hover-blue"><b>Our Vision</b></li>
+						<li>English Language</li>
+						<li>Mathematics</li>
+						<li>Christian Religious Studies</li>
+						<li>Social Studies</li>
+						<li>Basic Science</li>
+						<li>Computer Science</li>
+						<li>Verbal Reasoning</li>
+						<li>Quantitative Reasoning</li>
+					</ul>
+			</div>
+		</div>
+
+		<div class="w3-xlarge w3-cursive w3-padding w3-padding-32 animate_"><b>Motto : Education Is Excellence</div>
+	</section>
+
+
+	<div class="w3-padding-32">
+		<div class="w3-padding-large w3-card-4 w3-margin  w3-border-blue w3-bottombar">
+					<h2 class="w3-large w3-tag"><b>School Anthem</b></h2>
+					<p class="w3-medium">We are the bright students of Glory Land.<br>Glory Land <span class="w3-large"><b> x</b></span>2</p>
+					<p>As the light covers the darkness we shine above other school.<br>above other <span class="w3-large"><b> x</b></span>2</p>
+					<p>Anywhere we go we shine like the morning star.<br>shine like the morning star <span class="w3-large"><b> x</b></span>2</p>
+					<p>We are the bright students of Glory Land, Glory Academy.</p>
+					<p>Trust in the Lord, shine in the Lord<span class="w3-large"><b> x</b></span>2</p>
+					<p>Glory land Glory land Academy.</p>
+					
+			</div>
+	</div>
+	
+
+
+	<?php 
+		include 'footer.php';
+
+	?>
+	<!--TheAnimationScript-->
+<script type="text/javascript">
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 6000); // Change image every 2 secondscard-4
+	}
+</script>
+
+<!--Animation section ends -->
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

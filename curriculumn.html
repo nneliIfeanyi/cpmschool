@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>School System</title>
+	<link rel="stylesheet" type="text/css" href="theme.css">
+	<link rel="stylesheet" type="text/css" href="w3.css">
+
+</head>
+<body class="w3-serif">
+	<?php 
+		include 'header.php';
+
+	?>
+
+	<!-- Curriculumn Section -->
+	<section>
+		<div class="w3-card-4 w3-margin">
+			<div class="w3-serif w3-padding-large">
+				<h2><b>An Overview Of Our Curriculumn</b></h2>
+				<p>Our curriculumn and syllables is targeted at meeting the requirements as specified by the Ministry of Education which better equips the school in preparing her pupil/student for W.A.E.C. N.E.C.O. J.A.M.B and other National and state examination</p>
+			</div>
+			<div class="w3-row-padding">
+				<h4 class="w3-padding"><b>Subjects We Offer</b></h4>
+				<div class="w3-half">	
+					<ul class="w3-ul">
+						<li class="w3-blue w3-padding-16"><b>Basic Section</b></li>
+						<li>English Language</li>
+						<li>Mathematics</li>
+						<li>Christian Religious Studies</li>
+						<li>Social Studies</li>
+						<li>Basic Science</li>
+						<li>Computer Science</li>
+						<li>Verbal Reasoning</li>
+						<li>Quantitative Reasoning</li>
+					</ul>
+			</div>
+			<div class="w3-half">	
+					<ul class="w3-ul">
+						<li class="w3-blue w3-padding-16"><b>Junior Section</b></li>
+						<li>English Language</li>
+						<li>Mathematics</li>
+						<li>Christian Religious Studies</li>
+						<li>Social Studies</li>
+						<li>Basic Science</li>
+						<li>Computer Science</li>
+						<li>Verbal Reasoning</li>
+						<li>Quantitative Reasoning</li>
+					</ul>
+			</div>
+
+			<div class="w3-half" style="text-align: left;">	<!-- use accordion to toogle -->
+					<ul class="w3-ul w3-margin-top">
+						<li class="w3-blue w3-padding-16 w3-block"><b>Senior Section</b></li>
+						<li class="w3-btn w3-hover-blue w3-tag  w3-block" onclick="myFunction('Demo5')" style="text-align: left;">Core Subjects <span class="w3-text-blue">&#9661;</span></li>
+						<div id="Demo5" class="w3-hide w3-animate-zoom">
+							<li>English Language</li>
+							<li>Mathematics</li>
+							<li>Christian Religious Studies</li>
+							<li>Social Studies</li>
+						</div>
+						<li class="w3-tag w3-btn w3-hover-blue w3-block" onclick="myFunction('Demo6')" style="text-align: left;">Science Department <span class="w3-text-blue">&#9661;</span></li>
+							<div id="Demo6" class="w3-hide w3-animate-zoom">
+								<li>Basic Science</li>
+								<li>Computer Science</li>
+								<li>Verbal Reasoning</li>
+								<li>Quantitative Reasoning</li>
+							</div>
+						<li class="w3-tag w3-btn w3-hover-blue w3-block" onclick="myFunction('Demo7')" style="text-align: left;">Art Department <span class="w3-text-blue">&#9661;</span></li>
+							<div id="Demo7" class="w3-hide w3-animate-zoom">
+								<li>Basic Science</li>
+								<li>Computer Science</li>
+								<li>Verbal Reasoning</li>
+								<li>Quantitative Reasoning</li>
+							</div>
+						<li class="w3-tag w3-btn w3-hover-blue w3-block" onclick="myFunction('Demo4')" style="text-align: left;">Commercial Department <span class="w3-text-blue">&#9661;</span></li>
+							<div id="Demo4" class="w3-hide w3-animate-zoom">
+								<li>Basic Science</li>
+								<li>Computer Science</li>
+								<li>Verbal Reasoning</li>
+								<li>Quantitative Reasoning</li>
+							</div>
+					</ul>
+			</div>
+		</div>
+
+		<div class="w3-xlarge w3-cursive w3-padding w3-padding-32 animate_"><b>WE TEACH WITH CARE</div>
+	</section>
+
+
+	<div class="">
+		<div class="w3-padding-large  w3-border-blue w3-bottombar w3-card-4 w3-margin">
+					<h2 class="w3-large w3-tag"><b>Enroll Now</b></h2>
+					<p class="w3-medium">Admission still ongoing for the 2022/2023 session.<br>@Glory Land Academy we welcome any new student/pupil interested in quality mental social and spiritual development<br><span class=""><b>For inquiries see details below.</b></span></p>
+					
+					
+			</div>
+	</div>
+
+	
+	
+
+
+	<?php 
+		include 'footer.php';
+
+	?>
+	<!--TheAnimationScript-->
+<script type="text/javascript">
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 6000); // Change image every 2 secondscard-4
+	}
+</script>
+
+<!--Animation section ends -->
+<!--TheAccordionScript--
+	<script>
+	function myFunction(id) {
+	  var x = document.getElementById(id);
+	  if (x.className.indexOf("w3-show") == -1) {
+	    x.className += " w3-show";
+	  } else { 
+	    x.className = x.className.replace(" w3-show", "");
+	  }
+	}
+	</script>-->
+</body>
+</html>
