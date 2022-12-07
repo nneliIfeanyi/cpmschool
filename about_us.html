@@ -22,7 +22,7 @@
 						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="about_us.html">About</a>
 						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="curriculumn.html">Curriculumn</a>
 						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="#contact_us">Contact us</a>
-						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="https://school_system.newnigeria2023.com.ng">Login</a>
+						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="https://cpmacademy.newnigeria2023.com.ng">Login</a>
 					</div>
 				</nav>
 			</div>
@@ -38,7 +38,7 @@
 				</div>
 				<nav class="w3-col s3">
 					<div class="w3-right w3-text-light-grey w3-margin-top">
-						<a href="#"  onclick="myFunction('Demo1')" class="w3-btn w3-hover-blue w3-round-large  w3-small"><b>Menu</b></a>
+						<a href="#"  onclick="myFunction('Demo1')" class="w3-btn w3-round-large  w3-small"><img src="image/menu-icon.png" height="17" width="30"> <b>Menu</b></a>
 					</div>
 				</nav>
 			</div>
@@ -54,7 +54,7 @@
 					<a href="curriculumn.html" class="w3-hover-lightgrey w3-button w3-block">Curriculumn</a>
 				</li>
 				<li class="w3-block w3-button"><a href="#contact_us" class="w3-hover-lightgrey w3-button w3-block">Contact</a></li>
-				<li class="w3-block w3-button"><a href="https://school_system.newnigeria2023.com.ng" class="w3-hover-lightgrey w3-button w3-block">Login</a></li>
+				<li class="w3-block w3-button"><a href="https://cpmacademy.newnigeria2023.com.ng" class="w3-hover-lightgrey w3-button w3-block">Login</a></li>
 			
 			</ul>
 		</div>
@@ -152,10 +152,10 @@
 				<div class="w3-margin w3-padding-large w3-center">
 					<h3 class="w3-medium w3-wide w3-text-blue"><b>Quik Links</b></h3>
 					<ul class="w3-ul">
-					<li class="w3-btn w3-block"><a href="https://school_system.newnigeria2023.com.ng">Login</a></li>
-					<li class="w3-btn w3-block"><a href="more_facilities.php">Facilities</a></li>
-					<li class="w3-btn w3-block"><a href="about_us.php">Our Mission</a></li>
-					<li class="w3-btn w3-block"><a href="curriculumn.php">Curriculum</a></li>
+					<li class="w3-btn w3-block"><a href="https://cpmacademy.newnigeria2023.com.ng">Login</a></li>
+					<li class="w3-btn w3-block"><a href="more_facilities.html">Facilities</a></li>
+					<li class="w3-btn w3-block"><a href="about_us.html">Our Mission</a></li>
+					<li class="w3-btn w3-block"><a href="curriculumn.html">Curriculum</a></li>
 					
 				</ul>
 				</div>
@@ -183,10 +183,10 @@
 				<div class=" w3-center">
 					<h3 class="w3-medium w3-text-blue"><b>Shortcuts</b></h3>
 					<ul class="w3-ul">
-					<li class="w3-btn w3-block"><a href="https://school_system.newnigeria2023.com.ng">Login</a></li>
-					<li class="w3-btn w3-block"><a href="more_facilities.php">Facilities</a></li>
-					<li class="w3-btn w3-block"><a href="about_us.php">Our Mission</a></li>
-					<li class="w3-btn w3-block"><a href="curriculumn.php">Curriculum</a></li>
+					<li class="w3-btn w3-block"><a href="https://cpmacademy.newnigeria2023.com.ng">Login</a></li>
+					<li class="w3-btn w3-block"><a href="more_facilities.html">Facilities</a></li>
+					<li class="w3-btn w3-block"><a href="about_us.html">Our Mission</a></li>
+					<li class="w3-btn w3-block"><a href="curriculumn.html">Curriculum</a></li>
 					
 				</ul>
 				</div>
@@ -197,46 +197,18 @@
 		</div>
 	</footer>
 
-
-
-	<!--TheAnimationScript-->
-<script type="text/javascript">
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";  
+<!--TheAccordionScript-->
+	<script>
+	function myFunction(id) {
+	  var x = document.getElementById(id);
+	  if (x.className.indexOf("w3-show") == -1) {
+	    x.className += " w3-show";
+	  } else { 
+	    x.className = x.className.replace(" w3-show", "");
 	  }
-	  myIndex++;
-	  if (myIndex > x.length) {myIndex = 1}    
-	  x[myIndex-1].style.display = "block";  
-	  setTimeout(carousel, 6000); // Change image every 2 secondscard-4
 	}
-</script>
+	</script>
 
-<!--Animation section ends -->
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 </body>
 </html>
