@@ -4,16 +4,76 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>School System</title>
+	<title>C.P.M. | Curriculum</title>
 	<link rel="stylesheet" type="text/css" href="theme.css">
 	<link rel="stylesheet" type="text/css" href="w3.css">
 
 </head>
 <body class="w3-serif">
-	<?php 
-		include 'header.php';
+		<div class="showcase">	
+		<header class="w3-bar w3-text-light-grey w3-padding-large w3-card-4 w3-hide-small" style="z-index: 10;position: absolute;border-bottom: 1.2px solid blue;">
+			<div class="w3-row">
+				<div class="w3-col m4 l4 ">
+					<img src="image/badge1.png" width="80" height="70" class="w3-circle">
+				</div>
+				<nav class="w3-col m8 l8 w3-margin-top">
+					<div class="w3-right">
+						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="index.html">Home</a>
+						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="about_us.html">About</a>
+						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="curriculumn.html">Curriculumn</a>
+						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="#contact_us">Contact us</a>
+						<a class="w3-button w3-hover-blue w3-round-large w3-card" href="https://school_system.newnigeria2023.com.ng">Login</a>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-	?>
+
+			<!--  THIS IS SMALL SCREEN  -->
+
+		<header class="w3-bar w3-card-4 w3-hide-medium w3-hide-large" style="z-index: 10;position: absolute;border-bottom: 2px solid blue;">
+			<div class="w3-row-padding w3-text-light-grey" style="padding:7px 0;">
+				<div class="w3-col s9" style="padding-top: 4px;">
+					<img src="image/badge1.png" width="80" height="63" class="w3-circle">
+				</div>
+				<nav class="w3-col s3">
+					<div class="w3-right w3-text-light-grey w3-margin-top">
+						<a href="#"  onclick="myFunction('Demo1')" class="w3-btn w3-hover-blue w3-round-large  w3-small"><b>Menu</b></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="w3-padding w3-text-light-grey w3-hide w3-hide-medium w3-hide-large" style="top: 9.4vh;position: relative;background-color: rgba(10, 10, 89, 0.7648);z-index: 20;" id="Demo1">
+			
+			<ul class="w3-ul w3-center" style="border-top: none;">
+				<li class=" w3-block w3-button"><a href="index.html" class="w3-hover-lightgrey w3-button w3-block">Home</a></li>
+				
+				<li class="w3-block w3-button"><a href="about_us.html" class="w3-hover-lightgrey w3-button w3-block">About</a></li>
+				<li class="w3-block w3-button">
+					<a href="curriculumn.html" class="w3-hover-lightgrey w3-button w3-block">Curriculumn</a>
+				</li>
+				<li class="w3-block w3-button"><a href="#contact_us" class="w3-hover-lightgrey w3-button w3-block">Contact</a></li>
+				<li class="w3-block w3-button"><a href="https://school_system.newnigeria2023.com.ng" class="w3-hover-lightgrey w3-button w3-block">Login</a></li>
+			
+			</ul>
+		</div>
+
+
+		<div class="w3-hide-small">
+			<h1 class="w3-xxlarge animate w3-padding-small"><b>C.P.M. International School</b></h1>
+			<h2 style="margin-left: 14px;" class="animate2 w3-xlarge w3-text-light-grey w3-xlarge">(a.k.a. Glory Land Academy.)</h2>
+			<h5 class="animate4 w3-tag w3-blue">Since.. <span class="w3-medium">2002</span></h5>
+		</div>
+
+
+		<div class=" w3-hide-medium w3-hide-large">
+			<h1 class="w3-xlarge animate"><b>C.P.M. International School</b></h1>
+			<h2 style="margin-left: 15px;margin-top: -10px;" class="animate2 w3-text-light-grey w3-large">(a.k.a. <span class="w3-xxlarge"> Glory Land Academy.</span>)</h2>
+				<h5 class="animate4 w3-tag w3-blue">Since.. <span class="w3-medium">2002</span></h5>
+		</div>
+
+	</div><!-- SHOWCASE IS END HERE -->
 
 	<!-- Curriculumn Section -->
 	<section>
@@ -92,41 +152,87 @@
 
 	<div class="">
 		<div class="w3-padding-large  w3-border-blue w3-bottombar w3-card-4 w3-margin">
-					<h2 class="w3-large w3-tag"><b>Enroll Now</b></h2>
-					<p class="w3-medium">Admission still ongoing for the 2022/2023 session.<br>@Glory Land Academy we welcome any new student/pupil interested in quality mental social and spiritual development<br><span class=""><b>For inquiries see details below.</b></span></p>
-					
+			<h2 class="w3-large w3-tag"><b>Enroll Now</b></h2>
+			<p class="w3-medium">Admission still ongoing for the 2022/2023 session.<br>@Glory Land Academy we welcome any new student/pupil interested in quality mental social and spiritual development<br><span class=""><b>For inquiries see details below.</b></span></p>
+			
 					
 			</div>
 	</div>
 
+		<footer class="footer_showcase w3-border-blue w3-bottombar" id="contact_us">
+		<div class="w3-row-padding">
+			<div class="w3-col m6 l6 w3-hide-small" style="z-index:10;position: relative;"><!--FOR BIG SCREENS-->
+				<div class=" w3-left">
+					<h3 class="w3-xlarge w3-text-blue w3-wide"><b>Contact Address</b></h3>
+					<address>
+						Field Base Kaduna Road,<br>
+						Suleja Niger State
+					</address>
+					<h3 class="w3-small w3-wide w3-text-blue"><b>Call Us</b></h3>
+					<p class=""> 08122341834</p>
+					<p class=""> 08122341834</p>
+
+					<h3 class="w3-small w3-wide w3-text-blue"><b>Whatsapp Only</b></h3>
+					<p class=""> 08122341834</p>
+					<p class=""> 08122341834</p>
+
+				</div>
+			</div>
+			<div class="w3-col m6 l6 w3-hide-small" style="z-index:10;position: relative;">
+				<div class="w3-margin w3-padding-large w3-center">
+					<h3 class="w3-medium w3-wide w3-text-blue"><b>Quik Links</b></h3>
+					<ul class="w3-ul">
+					<li class="w3-btn w3-block"><a href="https://school_system.newnigeria2023.com.ng">Login</a></li>
+					<li class="w3-btn w3-block"><a href="more_facilities.php">Facilities</a></li>
+					<li class="w3-btn w3-block"><a href="about_us.php">Our Mission</a></li>
+					<li class="w3-btn w3-block"><a href="curriculumn.php">Curriculum</a></li>
+					
+				</ul>
+				</div>
+
+			</div>
+
+			<div class="w3-col s6 w3-hide-medium w3-hide-large" style="z-index:10;position: relative;">
+				<div class="w3-left">
+					<h3 class="w3-medium w3-text-blue"><b>Contact Address</b></h3>
+					<address>
+						Field Base Kaduna Road,<br>
+						Suleja Niger State
+					</address>
+					<h3 class="w3-medium w3-text-blue"><b>Call Us</b></h3>
+					<p class=""> 08122341834</p>
+					<p class=""> 08122341834</p>
+
+					<h3 class="w3-medium w3-text-blue"><b>Whatsapp Only</b></h3>
+					<p class=""> 08122341834</p>
+					<p class=""> 08122341834</p>
+
+				</div>
+			</div>
+			<div class="w3-col s6 w3-hide-medium w3-hide-large" style="z-index:10;position: relative;">
+				<div class=" w3-center">
+					<h3 class="w3-medium w3-text-blue"><b>Shortcuts</b></h3>
+					<ul class="w3-ul">
+					<li class="w3-btn w3-block"><a href="https://school_system.newnigeria2023.com.ng">Login</a></li>
+					<li class="w3-btn w3-block"><a href="more_facilities.php">Facilities</a></li>
+					<li class="w3-btn w3-block"><a href="about_us.php">Our Mission</a></li>
+					<li class="w3-btn w3-block"><a href="curriculumn.php">Curriculum</a></li>
+					
+				</ul>
+				</div>
+			</div>
+			<div class="w3-col s12 m12 l12 w3-card-4  w3-border-top w3-center w3-padding-16 w3-small" style="z-index:10;position: absolute;bottom: 0;">
+				<p class="w3-padding-large"><b>&copy 2022 Glory Land Academy,</b><br><span>Suleja</span></p>
+			</div>
+		</div>
+	</footer>
+
+
 	
 	
 
 
-	<?php 
-		include 'footer.php';
-
-	?>
-	<!--TheAnimationScript-->
-<script type="text/javascript">
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";  
-	  }
-	  myIndex++;
-	  if (myIndex > x.length) {myIndex = 1}    
-	  x[myIndex-1].style.display = "block";  
-	  setTimeout(carousel, 6000); // Change image every 2 secondscard-4
-	}
-</script>
-
-<!--Animation section ends -->
-<!--TheAccordionScript--
+<!--TheAccordionScript-->
 	<script>
 	function myFunction(id) {
 	  var x = document.getElementById(id);
@@ -136,6 +242,6 @@
 	    x.className = x.className.replace(" w3-show", "");
 	  }
 	}
-	</script>-->
+	</script>
 </body>
 </html>
