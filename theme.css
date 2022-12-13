@@ -183,9 +183,9 @@ section h4{
 
 @keyframes shift{
 	0%{margin-left: 10px;color: black;}
-	50%{margin-left: 40px;color: white;}
-	80%{margin-left: 40px;color: white;opacity: 0.6;}
-	100%{margin-left: 40px;color: white;opacity: 0.9;}
+	50%{margin-left: 20px;color: lightgrey;opacity: 0.3}
+	80%{margin-left: 30px;color: blue;opacity: 0.6;}
+	100%{margin-left: 40px;color: blue;opacity: 1;}
 }
 
 
