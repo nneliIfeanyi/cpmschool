@@ -88,7 +88,7 @@ transform: translateX(-100%);
                             </div>
                             <div class="user-info">
                                 <h4>Admin</h4>
-                                <span class="badge bg-primary"><a href="<?php echo URLROOT?>/admin/login" class="text-white">Login</a></span>
+                                <span class="badge bg-primary"><a href="<?php echo URLROOT?>/admin" class="text-white">Login</a></span>
                             </div>
                         </div>
                     </div>

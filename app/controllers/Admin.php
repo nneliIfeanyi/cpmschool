@@ -130,11 +130,6 @@
     }
 
     public function login(){
-
-        // Check if logged in
-        if(isLoggedIn()){
-            redirect('admin');
-        }
     
         // Check if POST
         if($_SERVER['REQUEST_METHOD'] == 'POST')
