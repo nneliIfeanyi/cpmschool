@@ -54,7 +54,7 @@
                                     $low = strtolower($classes->name);
                                     $low2 = str_replace(" ", "-", $low);
                                     $link = URLROOT.'/'.'student'.'/'.'class'.'/'.$classes->class_numeric;
-                                    $num_students = $this->student_model->num_students($classes->name);
+                                    $num_students = $this->student_model->num_students($classes->class_numeric);
                                     ?>
                                 <a class="btn btn-app" style="min-width:120px; height: 90px;" href="<?php echo $link?>"> 
                                     <span class="badge bg-success" data-toggle="tooltip" title="only <?php echo $num_students?>">

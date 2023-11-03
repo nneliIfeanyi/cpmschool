@@ -47,7 +47,7 @@
    if($_SERVER['REQUEST_METHOD'] == 'POST')
    {
 
-    $fullname = trim($_POST['surname']).trim($_POST['other_names']);
+    $fullname = trim($_POST['surname'])." ".trim($_POST['other_names']);
 
    $data = [       
      'name' => $fullname,
