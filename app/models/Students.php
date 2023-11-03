@@ -42,6 +42,19 @@
       return $results;
     }
 
+    //..... Selecting all students row count
+    public function students_total(){
+      $this->db->query("SELECT * FROM student");
+
+      $results = $this->db->resultset();
+
+      if ($this->db->rowCount() > 0) {
+        return $this->db->rowCount();
+      }else{
+        return false;
+      }
+    }
+
     //..... Selecting students in a class
     public function students($class){
         $this->db->query("SELECT * FROM student WHERE classesID = :class");

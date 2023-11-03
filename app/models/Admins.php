@@ -41,6 +41,15 @@
       return $results;
     }
 
+    // Classes Row count
+    public function num_classes(){
+      $this->db->query("SELECT * FROM classes");
+
+      $this->db->resultset();
+
+      return $this->db->rowCount();
+    }
+
     // Add class
     public function add_class($data){
       // Prepare Query

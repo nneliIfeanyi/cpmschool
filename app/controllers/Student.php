@@ -1,8 +1,8 @@
 <?php
   class Student extends Controller{
     public $student_model;
-    private $adminModel;
-    private $teacherModel;
+    public $adminModel;
+    public $teacherModel;
 
     public function __construct(){
      //load models
@@ -33,6 +33,7 @@
       $data = [ 
         'students' => $students,
         'classes' => $classes,
+        'class' => $class,
       ];
 
       // Load homepage/index view

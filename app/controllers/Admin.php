@@ -1,8 +1,8 @@
 <?php
   class Admin extends Controller{
-    private $adminModel;
-    private $teacherModel;
-    private $student_model;
+    public $adminModel;
+    public $teacherModel;
+    public $student_model;
 
     public function __construct(){
      //Load Models
@@ -13,10 +13,12 @@
 
     // Load Homepage
     public function index(){
+      if (!isset($_SESSION['user_id'])) {
+        redirect('admin/login');
+      }
       //Set Data
       $data = [
-        // 'title' => 'Welcome To SharePosts',
-        // 'description' => 'Simple social network built on the TraversyMVC PHP framework'
+        
       ];
 
       // Load homepage/index view

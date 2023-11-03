@@ -1,15 +1,15 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<div class="bg">
+    <div class="transparent">
 <div class="container row">
     <div class="col-md-6 mx-auto">
-    <div class="card card-outline mt-5 card-primary">
+    <div class="card card-outline mt-5">
         <div class="card-header text-center">
             <p>
                 <i class="fas fa-lock fa-5x"></i>
             </p>
             <a href="index" class="h1" style="color: #1b2626;"><b>Restricted Area</b></a>
         </div>
-
-   <div class="card">
      <div class="card-body">
         <p class="login-box-msg">Please fill in your credentials to Sign in</p>
         <form action="<?php echo URLROOT;?>/admin/login" method="post" id="adminLogin">
@@ -49,9 +49,11 @@
             <a href="<?php echo  URLROOT; ?>" class="btn btn-light btn-block"><span class="fas fa-backward"></span> Back</a>
         </p>
     </div>
-   </div>
+
 </div>
 </div>
+</div>
+    </div>
 </div>
 <?php require APPROOT . '/views/inc/footer.php'; ?>
 

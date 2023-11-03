@@ -25,23 +25,25 @@ transform: translateX(-100%);
 }
 }
 </style> 
+<div class="bg">
+    <div class="transparent">
 <header class="mb-4">
-    <div class="container mt-5">
+    <div class="container pt-5 text-light">
         <div class="d-flex justify-content-end">
             <div class="btn-group">
-                <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">
-                    Dark
+                <button class="btn btn-light btn-sm" data-bs-theme-value="dark">
+                Light
                 </button>
-                <button class="btn btn-light btn-sm" data-bs-theme-value="light">
-                    Light
+                <button class="btn btn-secondary btn-sm" data-bs-theme-value="light">
+                Dark  
                 </button>
             </div>
         </div>
         <h1 class="mb-4">Users</h1>
     </div>
 </header>
-<div class="cssmarquee">
-<h1 style="text-transform: uppercase;font-style: italic;">WELCOME TO <span class="text-primary">C.P.M. International School Suleja</span></h1>
+<div class="cssmarquee text-light">
+<h1 style="text-transform: uppercase;font-style: italic;color:antiquewhite;">WELCOME TO <span class="text-primary">C.P.M. </span>International School Suleja</h1>
 </div>
 <main>
     <div class="container">
@@ -97,5 +99,7 @@ transform: translateX(-100%);
         </div>
     </div>
 </main>
+</div>
+</div>
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
